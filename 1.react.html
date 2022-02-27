@@ -35,7 +35,16 @@
         // }
         // console.log(attrs)
         /*
+        ReactDOM.render(inner,container,callback)
+        将React构建好的视图渲染到真实DOM中
+        参数：
+          inner React构建好的视图(虚拟DOM)
+          container 容器，将React构建好的视图挂载渲染到目标元素中
+          callback 真实DOM渲染完的回调
         */
+        ReactDOM.render(div,document.querySelector("#root"),()=>{
+            console.log("渲染完成");
+        });
     </script>
 </body>
 </html>
