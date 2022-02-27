@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./reactjs/react.js"></script>
+    <script src="./reactjs/react-dom.js"></script>
+</head>
+<body>
+    
+    <script>
+        /*
+         createEelment(type,props,children1,children2)
+         参数：
+            type:类型 比如div
+            props:对象形式{},比如{className="box"}
+            children:内容或者子元素 string | ReactNode
+            返回值:
+            ReactNode (react构建好的虚拟dom)
+
+        */
+        //虚拟dom 以对象的形式模拟真实的dom
+        let span = React.createElement("span",null,"span1");
+        let span2 = React.createElement("span",null,"span2");
+        let div = React.createElement("div",{className:"box",id:"box"}, span,span2);
+        console.log(div);
+        // let div2 = document.createElement("div");
+        // console.log(div2);
+        // let attrs = "";
+        // for(let s in div2){
+        //     attrs += s + "|";
+        // }
+        // console.log(attrs)
+    </script>
+</body>
+</html>
