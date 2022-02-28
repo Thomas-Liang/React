@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./reactjs/react.js"></script>
+    <script src="./reactjs/react-dom.js"></script>
+    <script src="./reactjs/babel.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+       //使用jsx的时候需要用babel解析，否则报错
+       //JSX: Javascript + XML, 是JS的一个糖衣语法,给javascript添加XML的语法扩展
+       let div = <div className="box" id="box">
+        <span>span1</span>
+        <span>span2</span>
+        </div>
+        
+
+        ReactDOM.render(div,document.querySelector("#root"),()=>{
+            console.log("渲染完成");
+        });
+    </script>
+</body>
+</html>
